@@ -16,6 +16,7 @@ services:
       - neo4j_logs:/logs
       - neo4j_import:/import
       - neo4j_plugins:/plugins
+    restart: always  # Automatically restart the container
 
 volumes:
   neo4j_data:
